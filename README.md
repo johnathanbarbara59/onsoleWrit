@@ -1,0 +1,2 @@
+# onsoleWrit
+#1  Local $iReturn = ShellExecuteWait('PowerShell.exe', '"'&amp;@ScriptDir&amp;'\script_get_process_write_file.ps1"') ConsoleWrite('$iReturn: ' &amp; $iReturn &amp; @CRLF)    #2  Local $sCMD = '"PowerShell.exe" ' &amp; '"'&amp;@ScriptDir&amp;'\script_get_process_write_file.ps1"' ConsoleWrite('$sCMD := ' &amp; $sCMD &amp; @CRLF) $pid = Run($sCMD, @SystemDir, @SW_HIDE, $STDIN_CHILD + $STDOUT_CHILD + $STDERR_CHILD) ConsoleWrite('$pid: ' &amp; $pid &amp; @CRLF) 
